@@ -8,7 +8,7 @@
 import pandas as pd
 
 # --- EXTRACT ---
-df = pd.read_csv("C:/Users/HP/Downloads/marketing_campaign.csv", sep="\t")
+df = pd.read_csv("marketing_campaign.csv", sep="\t")
 
 # --- PROFILE ---
 print("First 5 rows:")
@@ -45,8 +45,8 @@ df = df.merge(education_map, on="Education", how="left")
 
 print("\nNew column added:")
 print(df[["Education", "Education_Level"]].drop_duplicates())
-
-# --- LOAD ---
+high_income.to_csv("high_income_customers.csv", index=False)
+df.to_csv("cleaned_customers.csv", index=False)
 high_income.to_csv("C:/DE_Practices/high_income_customers.csv", index=False)
 df.to_csv("C:/DE_Practices/cleaned_customers.csv", index=False)
 print("\nSaved both output files to DE_Practices folder")
