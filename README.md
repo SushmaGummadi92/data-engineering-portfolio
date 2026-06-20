@@ -18,7 +18,4 @@
 - 1,293 customers with no children at home
 - 5 education categories mapped to standardized labels
 
-## In Progress:
-- Python + SQL Server integration (Week 2)
-- Azure Data Factory pipeline (Week 4)
-- End-to-end capstone project (Week 6)
+
