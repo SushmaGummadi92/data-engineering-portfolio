@@ -1,0 +1,14 @@
+2026-06-23 19:34:38,745 - INFO - Pipeline started
+2026-06-23 19:34:38,746 - INFO - Connecting to server: LAPTOP-28C5HMFV\SQLEXPRESS, database: DQ_Practice
+2026-06-23 19:34:39,106 - INFO - Connected to SQL Server successfully
+2026-06-23 19:34:39,107 - INFO - STEP 2 — Extract started
+2026-06-23 19:34:39,279 - INFO - Extracted 2240 rows, 29 columns from customer_data
+2026-06-23 19:34:39,279 - INFO - STEP 3 — Transform started
+2026-06-23 19:34:39,282 - INFO - Null incomes fixed: 24 \u2192 0
+2026-06-23 19:34:39,286 - INFO - Age column added. Range: 28 to 131
+2026-06-23 19:34:39,293 - INFO - Income categories added: {'Medium': 1029, 'High': 788, 'Low': 370, 'Very High': 53}
+2026-06-23 19:34:39,294 - INFO - STEP 4 — Load started
+2026-06-23 19:34:41,517 - INFO - Loaded 2240 rows into customer_data_transformed
+2026-06-23 19:34:41,518 - INFO - STEP 5 — Verify started
+2026-06-23 19:34:41,542 - INFO - Verification result: [{'total_rows': 2240, 'avg_income': 52247.25135379059, 'avg_age': 55, 'youngest': 28, 'oldest': 131}]
+2026-06-23 19:34:41,543 - INFO - Pipeline completed successfully
