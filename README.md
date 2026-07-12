@@ -52,6 +52,27 @@ Key results:
 - Undergraduate level spends most.
 - DQ status: PASS
 
-## In Progress
-- Week 4: Azure Data Factory cloud pipeline
-- Week 6: End-to-end capstone project
+## Project 4: Azure Data Factory ETL Pipeline
+
+**Tools:** Azure Data Factory, Azure Blob Storage, 
+           ADF Data Flow, Cloud ETL
+
+**Architecture:**
+Azure Blob Storage (CSV) → ADF Copy Activity 
+→ ADF Data Flow (Filter + Transform) 
+→ Azure Blob Storage (cleaned output)
+
+**Pipeline components:**
+- Linked Service: Azure Blob Storage connection
+- Dataset (Source): marketing_campaign.csv (tab-delimited)
+- Dataset (Sink): cleaned_customers.csv
+- Copy Activity: Copy_Customer_CSV
+- Data Flow: df_customer_transform
+  - Source: CustomerSource (2,240 rows)
+  - Filter: FilterValidIncome (!isNull(Income))
+  - Sink: CustomerOutput (2,216 rows after filtering)
+- Trigger: Daily schedule
+
+**Result:** Pipeline status Succeeded
+Both activities completed — Copy + Data Flow
+Output CSV written to Azure Blob Storage
