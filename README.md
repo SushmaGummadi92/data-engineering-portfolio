@@ -34,7 +34,24 @@ Key results:
 
 ---
 
+## Project 3: Customer Intelligence SQL Report
+**Tools:** SQL Server, CTEs, Window Functions, Star Schema  
+**File:** customer_intelligence_report.sql
+
+### Report sections:
+1. Overall summary — total customers, avg income, revenue
+2. Spending by education — ranked with % of total
+3. Top 5 customers per education group
+4. Year over year customer growth + spending growth
+5. Customer segmentation — Premium/Standard/Budget/Low Value
+6. Data quality check on star schema
+
+### Key findings:
+- Low Value segment has most customers.
+- Year 2013 has the hirghest growth with 94.270000000000%.
+- Undergraduate level spends most.
+- DQ status: PASS
+
 ## In Progress
-- Week 3: Advanced SQL — window functions, star schema
 - Week 4: Azure Data Factory cloud pipeline
 - Week 6: End-to-end capstone project
